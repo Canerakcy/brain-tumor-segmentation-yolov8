@@ -1,22 +1,19 @@
-# 🧠 Brain Tumor Segmentation with YOLOv8 (Jupyter Notebook)
+# YOLOv8 ile Beyin Tümörü Nesne Algılama
 
-Bu projede, Roboflow üzerinden alınan **MRI beyin tümörü verisi** kullanılarak **YOLOv8 segmentasyon modeli** eğitilmiştir. Eğitim ve test işlemleri tamamen **Jupyter Notebook** ortamında gerçekleştirilmiştir.
+Bu projede, Roboflow’dan alınan beyin tümörü veri seti kullanılarak YOLOv8 modeli ile nesne algılama yapılmıştır.
 
-## 📂 Dataset
+## Kullanılanlar:
+- YOLOv8 (ultralytics)
+- Roboflow
+- Jupyter Notebook
 
-- Roboflow Projesi: [Brain Tumor Dataset](https://universe.roboflow.com/iotseecs/brain-tumor-mzvyv)
-- Veri Tipi: YOLOv8-Segmentation
-- Görseller: MRI formatında, tümör bölgeleri segment maskeleri ile etiketlenmiş
+## Adımlar:
+1. Roboflow’dan YOLOv8 Detection formatında veri indirildi
+2. Model eğitildi (30 epoch)
+3. Test görsellerinde tahminler yapıldı
 
-## 🧪 Kullanılan Teknolojiler
+## Dataset:
+[Brain Tumor Detection Dataset - Roboflow](https://universe.roboflow.com/iotseecs/brain-tumor-yzzav/dataset/1)
 
-- Python 3.x
-- YOLOv8 (`ultralytics`)
-- Roboflow API
-- OpenCV
-- Matplotlib
-
-## 🛠️ Kurulum ve Kullanım
-
-```bash
-pip install roboflow ultralytics opencv-python matplotlib
+## Kodlar:
+`yolov8_brain_tumor.ipynb` dosyasında mevcut.
